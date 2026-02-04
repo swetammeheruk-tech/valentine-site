@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>For You 💖</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- floating hearts -->
+  <div id="hearts"></div>
+
+  <main class="container">
+    <!-- HERO -->
+    <section class="card hero">
+      <h1>Will you be my Valentine? 💘</h1>
+      <p class="sub">Official invite from your totally-in-love boyfriend 🥹</p>
+
+      <div class="btnRow">
+        <button id="yesBtn" class="btn primary">YES! 💞</button>
+        <button id="noBtn" class="btn ghost">No 😶</button>
+      </div>
+
+      <div id="yesResult" class="yesResult hidden">
+        <h2>Good choice babuu 😌</h2>
+        <p>You just unlocked unlimited hugs, kisses, and cuddles (redeemable soon, promise).</p>
+
+        <div class="gifRow">
+          <img class="miniImg" src="assets/cute1.png" alt="cute" />
+          <img class="miniImg" src="assets/cute2.png" alt="cute" />
+        </div>
+
+        <p class="tiny">Now you’re stuck with me forever ∞</p>
+      </div>
+    </section>
+
+    <!-- DATE IDEAS -->
+    <section class="card">
+      <h2>Our Date Ideas 📱</h2>
+      <ul class="list">
+        <li>Netflix party + video call (I’ll let you pick… maybe)</li>
+        <li>Order the same food & judge each other’s eating habits 🍕</li>
+        <li>Late-night talks that somehow turn into sleeping 💤</li>
+        <li>Playlist exchange & argue about music taste (you’re wrong btw) 🎧</li>
+        <li>Send me selfies so I can simp shamelessly 🫶</li>
+      </ul>
+    </section>
+
+    <!-- SECRET NOTE -->
+    <section class="card center">
+      <h2>A Secret Note For You 💌</h2>
+      <p class="sub">Click the envelope to open it</p>
+
+      <button id="envelope" class="envelope" aria-label="Open secret note">
+        <span class="envTop"></span>
+        <span class="envBody"></span>
+        <span class="envHeart">♥</span>
+      </button>
+
+      <div id="noteModal" class="modal hidden" role="dialog" aria-modal="true">
+        <div class="modalBox">
+          <button id="closeModal" class="close">✕</button>
+          <h3>My note 💖</h3>
+          <p id="noteText">
+            Twinkle, you make my world softer, brighter, and more meaningful.
+            I’m proud of you. I’m grateful for you. And I choose you—every day. 🥰
+          </p>
+          <p class="tiny">— Yours, Swetam</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- MEMORIES -->
+    <section class="card">
+      <h2>Our Favorite Memories 📸</h2>
+      <p class="sub">Tap a gift to reveal</p>
+
+      <div class="grid">
+        <button class="memory" data-title="Puri 🌊" data-text="That beach walk + the smiles… unbeatable.">
+          🎁
+        </button>
+        <button class="memory" data-title="Chilika 🦩" data-text="Boat, breeze, and you—perfect day.">
+          🎁
+        </button>
+        <button class="memory" data-title="Bhubaneswar ✨" data-text="Where it all felt *real* for the first time.">
+          🎁
+        </button>
+        <button class="memory" data-title="Barpali ❤️" data-text="Missing you extra there. Soon, I’m coming.">
+          🎁
+        </button>
+      </div>
+
+      <div id="memoryModal" class="modal hidden" role="dialog" aria-modal="true">
+        <div class="modalBox">
+          <button id="closeMemory" class="close">✕</button>
+          <h3 id="memoryTitle">Memory</h3>
+          <p id="memoryText">...</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOUNDTRACK -->
+    <section class="card">
+      <h2>Our Soundtrack 🎶</h2>
+      <p class="sub">Songs that instantly remind me of you</p>
+
+      <!-- Replace these Spotify embeds with your songs -->
+      <div class="spotify">
+        <iframe style="border-radius:12px"
+          src="https://open.spotify.com/embed/track/0VjIjW4GlUZAMYd2vXMi3b"
+          width="100%" height="152" frameborder="0"
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+        </iframe>
+      </div>
+
+      <div class="spotify">
+        <iframe style="border-radius:12px"
+          src="https://open.spotify.com/embed/track/3UmaczJpikHgJFyBTAJVoz"
+          width="100%" height="152" frameborder="0"
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+        </iframe>
+      </div>
+    </section>
+
+    <!-- SECRET SURPRISES -->
+    <section class="card center">
+      <h2>Secret Surprises 🎁</h2>
+      <p class="sub">Click each button for a message</p>
+
+      <div class="btnRow wrap">
+        <button class="btn surprise" data-msg="You’re my favorite person. Always. 💗">Surprise #1</button>
+        <button class="btn surprise" data-msg="I owe you 100 kisses. Redeem anytime 😙">Surprise #2</button>
+        <button class="btn surprise" data-msg="I love you more than biryani (yes, I said it) 😤">Surprise #3</button>
+        <button class="btn surprise" data-msg="Date soon. No excuses. 🫶">Surprise #4</button>
+      </div>
+
+      <p class="tiny footerNote">Made with love + a little drama 😌</p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
